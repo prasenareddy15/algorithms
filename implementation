@@ -1,0 +1,26 @@
+/* Read input from STDIN. Print your output to STDOUT*/
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d,k,p;
+	double n;
+	scanf("%d,%d,%d,%d",&a,&b,&c,&d);
+	n=(c-a)/(d-b);
+	k=(int)n;
+	if (n==k&k!=0)
+	{
+		printf("YES");
+	}
+	else if(k==0)
+	{
+		printf("NO");
+	}
+	else
+	{
+	    printf("NO");
+	}
+
+
+
+}
