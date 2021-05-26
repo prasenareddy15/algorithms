@@ -1,0 +1,21 @@
+def search(arr,ele):
+    left=0
+    n=len(arr)
+    right=n-1
+    pos =-1
+    for left in range(0,right,1):
+        if(arr[left]==ele):
+            pos =left+1
+            print("element is found at",pos,"in array")
+            break
+        if(arr[right]==ele):
+            pos =right+1
+            print("element is found at",pos,"in array")
+            break
+        right-=1
+    if(pos==-1):
+        print("element not found")
+arr=[1,2,3,4,5]
+ele=4
+search(arr,ele)
+
