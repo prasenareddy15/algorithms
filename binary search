@@ -1,0 +1,22 @@
+def recursive_binary(arr,l,r,ele):
+    """l=left limit
+            r=rigth limit
+                ele=element to be searched"""
+    if(r>=l):
+        mid=l+(r-l)//2
+        if(arr[mid]==ele):
+            return mid
+        elif arr[mid]>ele:
+            return(recursive_binary(arr,l,mid-1,ele))
+        else:
+            return(recursive_binary(arr,mid+1,r,ele))
+    else:
+        return -1
+arr=[2,3,4,5,6]
+x=22
+result= recursive_binary(arr,0,len(arr)-1,x)
+if(result!=-1):
+    print("element is found at index %d"%result)
+else:
+    print("sorry!\nwe couldnt find your request")
+
